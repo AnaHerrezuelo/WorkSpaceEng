@@ -1,0 +1,9 @@
+import java.util.Scanner;
+//1,2,4,5,7.8
+public class UT5Exercises {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		
+		/*EXERCISE 1*/
+	}
+}
