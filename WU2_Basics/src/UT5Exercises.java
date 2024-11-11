@@ -42,7 +42,7 @@ public class UT5Exercises {
 		
 		
 		
-	/*EXERCISE 4
+	/*EXERCISE 4 
 		int size = 3;
 		String students [] = new String[size];
 		int grades [] = new int[size];
@@ -69,11 +69,80 @@ public class UT5Exercises {
 		
 	/*EXERCISE 5 
 		int size=7;
+		int num;
 		String [] names = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "sunday"};
+		
+		System.out.println("give me a number: ");
+		num = keyboard.nextInt();
+		
+		if(num<1 || num>7){
+			System.out.println("error");
+		}else{
+			System.out.println(names[num]);
+		}
+		
+		//for(int i=0; i<size; i++) {
+		//	System.out.println(names[i]);
+		//};
+	*/	
+		
+		
+	/*EXERCISE 7
+		int size=3;
+		int grades [] = new int[size];
+		int order[] = new int [grades.length];
+		int max=0;
+		int pos=0;
+		
 		for(int i=0; i<size; i++) {
-			System.out.println(names[i]);
+			System.out.print("Give me a number: ");
+			grades[i] = keyboard.nextInt();
+		};
+		
+		for(int j=0; j<size; j++) {
+			max=0;
+			for(int k=0; k<grades.length; k++) {
+				if(max<grades[k]) {
+					max=grades[k];
+					pos=k;
+				}
+			};
+			order[j]=max;
+			grades[pos]=-1;
+		}
+		
+		
+		for(int i=0; i<size; i++) {
+			System.out.print(grades[i] + ", ");
+		};
+		
+		System.out.println( " ");
+		for(int i=0; i<size; i++) {
+			System.out.print(order[i] + ", ");
 		};
 	*/	
 		
+		
+	/* EXERCISE 8 */
+		int dni;
+		int num;
+		String [] letra = {"T", "R", "W", "A", "G", "M", "Y", "F", "P", "D","X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E", "O"};
+		//String [] letra2 = {"TRWAGMYFPDXBNJZSQVHLCKEO"};
+		
+		System.out.print("Give me a number: ");
+		dni = keyboard.nextInt();
+		//letter=letra2.charAt(dni%23);
+		
+		num=dni/23;
+		num=num*23;
+		num=dni-num;
+		
+		//System.out.println(letter);
+		System.out.println(num);
+		System.out.println(letra[num]);
+		
 	} // end of public static void main (String [] args)
-}
+} //end of public class
+
+
+
