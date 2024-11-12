@@ -1,0 +1,65 @@
+
+public class TablesExercises {
+	public static void main (String [] Args) {
+	/*	
+		int students [][];
+		int rows=2;
+		int columns=6;
+		
+		String [] Module ={"Computer System", "Databases", "Programming", "ML", "DataAccess"};
+		students = new int[rows][columns];
+		int secondVector[]= {23,24,25,26,27,28};
+		
+		
+		students[0][0]=13;
+		students[0][1]=27;
+		students[0][2]=25;
+		students[0][3]=21;
+		students[0][4]=19;
+		students[0][5]=16;
+		students [1]=secondVector;
+		
+		
+		
+		//int students1 [][]= {{13,14,15,16,17,18},{21,17,24,26,30,30}};
+		
+		//System.out.println(students[0][3]);
+		for(int i=0; i<columns; i++) {
+			System.out.print(students1[0][i] + ", ");
+		};
+	*/		
+		
+		
+		int students [][];
+		int rows=2;
+		int columns=6;
+		
+		String [] Module ={"Computer System", "Databases", "Programming", "ML", "Development Enviroment", "DataAccess"};
+		students = new int[rows][columns];
+		int secondVector[]= {23,24,25,26,27,28};
+		
+		
+		
+		int students1 [][]= {{13,14,15,16,17,18},{21,17,24,26,30,30}};
+		
+		System.out.println(students1.length);
+		System.out.println(students1[0].length);
+		
+		for(int row=0;row<students1.length;row++) {
+			for(int column=0;column<students1[row].length;column++) {
+				System.out.print(students1[row][column] + ", ");
+			}
+			System.out.println(" ");
+		}
+		
+		for(int row=0;row<students1.length;row++) {
+				System.out.print(students1[row][column] + ", ");
+			System.out.println(" ");
+		}
+		
+		
+		
+		
+	} // end of public static void main (String [] args)
+} //end of public class
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;UT5Exercises&apos; to &apos;UT5ExercisesArrays&apos;&#x0D;&#x0A;- Original project: &apos;WU2_Basics&apos;&#x0D;&#x0A;- Original element: &apos;UT5Exercises&apos;&#x0D;&#x0A;- Renamed element: &apos;UT5ExercisesArrays&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UT5Exercises&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{UT5Exercises.java[UT5Exercises" matchStrategy="1" name="UT5ExercisesArrays" qualified="false" references="true" similarDeclarations="false" stamp="1731397568326" textual="false" version="1.0"/>
+</session>
