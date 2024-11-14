@@ -114,11 +114,11 @@ public class TablesExercises {
 		
 		/* EXECISE 6 OF THE WORD DOCUMENT  WU3 EXERCISES  */
 
-		int rows;
-		System.out.print("give me the number of rows and colums: ");
-		rows= keyboard.nextInt();
+		float num;
+		System.out.print("give me the number: ");
+		num= keyboard.nextFloat();
 		
-		System.out.print(rows);
+		System.out.print(num);
 		
 		
 		

@@ -71,9 +71,7 @@ public class TablesExercises {
 		
 		
 		
-		/* EXERCISE 3 OF THE WORD DOCUMENT WU3 EXERCISES 
-		 IT WORKS
-		 
+		/* EXERCISE 3 */
 		int grades [][];
 		int rows=4;
 		int columns=3;
@@ -98,8 +96,6 @@ public class TablesExercises {
 		
 		for(int i=0;i<rows;i++) {
 			int avg=0;
-			System.out.print(students[i]);
-			System.out.print(" - ");
 			for(int j=0;j<columns;j++) {
 				avg=avg+grades[i][j];
 				//System.out.print(grades[i][j]);
@@ -108,23 +104,17 @@ public class TablesExercises {
 			System.out.print(avg);
 			System.out.println(" ");
 		}
-	*/	
 		
-		
-		
-		/* EXECISE 6 OF THE WORD DOCUMENT  WU3 EXERCISES  */
-
-		int rows;
-		System.out.print("give me the number of rows and colums: ");
-		rows= keyboard.nextInt();
-		
-		System.out.print(rows);
-		
-		
-		
-		
-		
-		
+		/*
+		for(int i=0;i<rows;i++) {
+			System.out.print(students[i]);
+			System.out.print(" - ");
+			for(int j=0;j<columns;j++) {
+				System.out.print(grades[i][j]);
+			}
+			System.out.println(" ");
+		}
+		*/
 		
 	} // end of public static void main (String [] args)
 } //end of public class
