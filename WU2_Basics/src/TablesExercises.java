@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class TablesExercises {
 	public static void main (String [] Args) {
-		Scanner keyboard =new Scanner(System.in);
+		Scanner keyboard = new Scanner(System.in);
 		
 	/*	
 		int students [][];
@@ -112,18 +112,65 @@ public class TablesExercises {
 		
 		
 		
-		/* EXECISE 6 OF THE WORD DOCUMENT  WU3 EXERCISES  */
+		/* EXECISE 6 OF THE WORD DOCUMENT  WU3 EXERCISES   WORKS 
 
 		int rows;
-		System.out.print("give me the number of rows and colums: ");
-		rows= keyboard.nextInt();
+		int columns;
+		int num=1;
 		
-		System.out.print(rows);
+		 System.out.print("Enter the number of rows and columns: ");
+	        rows = keyboard.nextInt();
+	        columns = rows;
+
+	        
+	        float[][] table = new float[rows][columns];
+
+	        //System.out.println("Enter the elements of the matrix (decimal values):");
+	        for (int i = 0; i < rows; i++) {
+	            for (int j = 0; j < columns; j++) {
+	                //System.out.print("Give me the number r/c " + i + "/" + j + ": ");
+	            	System.out.print("Give me the number " + num + ": ");
+	                table[i][j] = keyboard.nextFloat();
+	                num++;
+	            }
+	        }
+
+	        // Display the matrix row by row
+	        System.out.println("The matrix is:");
+	        for (int i = 0; i < rows; i++) {
+	            for (int j = 0; j < columns; j++) {
+	                //System.out.print(table[i][j] + "  ");
+	                System.out.printf("%.2f",table[i][j]);
+	                System.out.print("  ");
+	            }
+	            System.out.println(" "); // Move to the next row
+	        }
+		*/
+		
+		
+		
+		/* EXERCISE 9 */
 		
 		
 		
 		
 		
+		
+		
+		
+		
+		/*  LINEAR SEARCH EX9  
+		
+		int size=6;
+		int grades [] = new int [size];
+		
+		
+		System.out.print("Enter the grade: ");
+		for (int i = 0; i < size; i++) {
+            grades[i]=keyboard.nextInt();
+        }
+
+		*/
 		
 		
 	} // end of public static void main (String [] args)
