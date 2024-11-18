@@ -43,10 +43,8 @@ public class ArraySearching {
 		
 		
 		/* EXAMPLE EXERCISE (44)*/
-		
-		int size = 3;
-		//int numbers [] = new int [size];
-		int [] numbers = {1, 2, 3, 4, 7, 15, 5 };
+
+		int [] numbers = {1, 2, 3, 4 };
 		int searchValue = 2;
 		boolean keepGoing=true;
 		
