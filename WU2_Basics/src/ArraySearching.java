@@ -42,7 +42,10 @@ public class ArraySearching {
 		
 		
 		
-		/* EXAMPLE EXERCISE (44)*/
+		
+		
+		
+		/* EXAMPLE EXERCISE (44)
 
 		int [] numbers = {1, 2, 3, 4 };
 		int searchValue = 2;
@@ -60,24 +63,63 @@ public class ArraySearching {
 			System.out.print("*");
 		}
 		
+		*/
+		
+		
+		
+	
 		
 		
 		
 		
 		
+		/* EXERCISE 12 BINARY SEARCH 
+		
+		//int size=6;
+		//int grades [] = new int [size];
+		int grades [] = {1,2,3,4,5,6};
+		int num;
 		
 		
+//		for (int i = 0; i < size; i++) {
+//			System.out.print("Enter the grade " + i + ": ");
+//	        grades[i]=keyboard.nextInt();
+//	    }
 		
+		System.out.print("Enter the number you want to search: ");
+        num=keyboard.nextInt();
+
+        
+        
+      int up,low,mid;
+      low=0; up=grades.length-1; mid=(low+up)/2;
+      
+      while(low<up && grades[mid]!=num) {
+    	  if(grades[mid]>num){
+    		  up=mid-1;  
+    	  }else {
+    		  low=mid+1;
+    	  }
+    	  mid=(low+up)/2;
+      }
+      
+      
+      if(grades[mid]==num){
+    	  System.out.print("position: "+ mid);
+	  }else {
+		  System.out.print("it is not in the vector");
+	  }
 		
-		
-		
-		
+	*/	
 		
 		
 
+      
+      
+      
 		
 		
 		
 		
-	};
-};
+	} // end of public static void main (String [] args)
+} //end of public class
