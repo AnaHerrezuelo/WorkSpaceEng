@@ -121,7 +121,7 @@ public class ArraysExercices {
 		
 		
 		
-		/* COPY THE CONTENT OF AN ARRAY IN ANOTHER */
+		/* COPY THE CONTENT OF AN ARRAY IN ANOTHER 
 		
 		int [] original  = {3,5,7,3};
 		int copy[] = new int [original.length];
@@ -140,7 +140,20 @@ public class ArraysExercices {
 		for(int i=0; i<original.length; i++){
 			System.out.print(original[i] + " ");
 		};
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 
-	}
-}
+	} // end of public static void main (String [] args)
+} //end of public class

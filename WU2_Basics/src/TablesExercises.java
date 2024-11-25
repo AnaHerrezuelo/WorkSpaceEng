@@ -71,6 +71,8 @@ public class TablesExercises {
 		
 		
 		
+		
+		
 		/* EXERCISE 3 OF THE WORD DOCUMENT WU3 EXERCISES 
 		 IT WORKS
 		 

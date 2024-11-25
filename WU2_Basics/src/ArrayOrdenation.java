@@ -31,7 +31,7 @@ public class ArrayOrdenation {
 		
 		
 		 
-		/* BUBBLE METHOD ORDENATION */
+		/* BUBBLE METHOD ORDENATION 
 		int array [] = {5,2,4,3,8,9};
 		int max, aux;
 		
@@ -49,6 +49,13 @@ public class ArrayOrdenation {
 			}//k
 			System.out.println(" ");
 		}//i
+		*/
+		
+		
+		
+		
+		
+		
 		
 		
 		
