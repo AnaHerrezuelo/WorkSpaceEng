@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 //1,2,4,5,7.8
 public class UT5ExercisesArrays {
 	public static void main(String[] args) {
@@ -302,6 +303,7 @@ public class UT5ExercisesArrays {
 		
 		/*  EXERCISE 10 */
 		//float height;
+		
 		int  size;
 		
 		
@@ -309,15 +311,20 @@ public class UT5ExercisesArrays {
 	    size=keyboard.nextInt();
 	    
 	    float heights [] = new float [size];
-	   
+	    float[] originalHeights = new float[size];
+	    
 	    for (int i = 0; i < heights.length; i++) {
 			System.out.print("Enter the height: ");
 	        heights[i]=keyboard.nextFloat();
 	    }
 	    
+	    Arrays.sort(heights);
 		
 		
-		
+	    for (int i = 0; i < heights.length; i++) {
+			System.out.print(heights[i]);
+			System.out.println();
+	    }
 		
 		
 		
