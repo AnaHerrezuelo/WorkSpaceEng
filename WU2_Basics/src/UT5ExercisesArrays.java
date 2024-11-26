@@ -301,7 +301,7 @@ public class UT5ExercisesArrays {
 		
 		
 		
-		/*  EXERCISE 10 */
+		/*  EXERCISE 10 
 		//float height;
 		
 		int  size;
@@ -325,13 +325,115 @@ public class UT5ExercisesArrays {
 			System.out.print(heights[i]);
 			System.out.println();
 	    }
+		*/
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		/* ANOTHER EXERCISE 
+	    int count=0;
+	    int aux;
+	    int auxRow=0, auxCol=0;
+	    boolean keep=true;
+	    int [][] table = {};
+	    
+	    System.out.print("age");
+	    aux=keyboard.nextInt();
+	    while(aux>0) {
+	    	for(int row=0; row<table.length; row++) {
+	    		for(int col=0; col<table.length; col++) {
+	    			if(aux == table[row][col]) {
+	    				auxRow=row;
+	    				auxCol=col;
+	    				count++;
+	    				break;
+	    			}//if
+	    		}//col	
+	    	}//row
+	    }//while
+	    
+	    if(count>0) {
+	    	System.out.print("I have found " + count + "teachers, the last one is in dep=" + auxRow);
+	    }
+		
+	    */
+		
+		
+		
+		
+		
+		
+		
+		/* EXERCISE 14 */
+		
+	    int size=-1;
+	      
+	    while(size<=0) {
+		    System.out.print("Enter the size: ");
+		    size=keyboard.nextInt();
+		    keyboard.nextLine();
+	    };
+	    
+	    
+	    String [] names = new String[size];
+	    String [] capitalNames = new String[size];
+	    
+//	    System.out.println(size);
+//	    for(int i=0; i < names.length; i++) {
+//	    	System.out.println(i);
+//	    }
 	    
 	    
 	    
+	    //insert the names
+	    for(int i=0; i < names.length; i++) {
+	    	System.out.print("give me the names " + (i+1) + " :");
+	    	//System.out.println();
+	    	names[i]=keyboard.nextLine();
+	    }
+	    
 		
+	    //make the names upper-case
+	    String  auxName="";
+	    String name;
+	    char letter='9';
+	    
+	    
+	    for(int i=0; i < names.length; i++) {
+	    	name = names[i];
+	    	auxName="";
+		    for(int j=0; j < name.length(); j++) {
+		    	//System.out.println(j);
+		    	letter=(name.charAt(j));
+				if(name.charAt(0)>='a' && name.charAt(0)<='z') {
+					    	letter=(char) (letter-32);
+					    }
+					    auxName= auxName + letter;
+		    }
+		    capitalNames[i]=auxName;
+		    //System.out.println(auxName);
+	    }
+	    
+	    
+	    Arrays.sort(capitalNames);
+	    
+	    for(int i=0; i < names.length; i++) {
+	    	System.out.println("me the names " + (i+1) + " :" + capitalNames[i]);
+
+	    }
+	    
+	    
+		
+		
+
+	    
+	    
+	    
 		
 	} // end of public static void main (String [] args)
 } //end of public class
