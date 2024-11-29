@@ -100,7 +100,7 @@ public class CharacterStrings {
 		System.out.print("give me a word: ");
 		word=keyboard.nextLine();
 		
-		System.out.print("give me a character: ");
+		System.out.print("give me a word: ");
 		word2=keyboard.nextLine();
 		
 		
@@ -151,10 +151,94 @@ public class CharacterStrings {
 		
 		
 		
-		/* EXXERCISE 5 (ptt WU4 {pg 12}) 
-		it works */
+		/* EXXERCISE 5 (ptt WU4 {pg 19}) 
+		it works 
 		
 		int position;
+
+		String word;
+		
+		System.out.print("give me a word: ");
+		word=keyboard.nextLine();
+		
+		System.out.print("give me a position: ");
+		position=keyboard.nextInt();
+		
+		
+		if(position>word.length()) {
+			System.out.print("that position is non existent ");
+		}else{
+			System.out.print(word.charAt(position)+ " ");
+		};
+		*/
+		
+		
+		
+		
+
+		/* EXXERCISE 6 (ptt WU4 {pg 19}) 
+		depurated 
+		
+		String word;
+		String word2;
+		
+
+		System.out.print("give me a word: ");
+		word=keyboard.nextLine();
+		
+		System.out.print("give me a word 2: ");
+		word2=keyboard.nextLine();
+		
+		
+		boolean result=word.equals(word2);
+		
+		if(result == true) {
+			System.out.print("These words are equals");
+		}else{
+			System.out.print("These words are NOT equals");
+		};
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		/* EXXERCISE 7 (ptt WU4 {pg 19}) 
+		it works */
+		int num;
+		String word;
+		String word2;
+		
+
+//		System.out.print("give me a number: ");
+//		num=keyboard.nextInt();
+//		keyboard.nextLine();
+		
+		System.out.print("give me a word: ");
+		word=keyboard.nextLine();
+		
+		System.out.print("give me a word 2: ");
+		word2=keyboard.nextLine();
+		
+		int resultInt=word.compareTo(word2);
+		
+		System.out.println(resultInt);
+		 
+		
+		
+//		for(int i=0; i<num; i++) {
+//			
+//		}
+		
+		
+		
+		/* EXXERCISE 8 (ptt WU4 {pg 19}) 
+		it works */
+		
+		
 		
 		
 		
