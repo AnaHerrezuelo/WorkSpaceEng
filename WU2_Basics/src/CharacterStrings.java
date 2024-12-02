@@ -207,7 +207,7 @@ public class CharacterStrings {
 		
 		
 		/* EXXERCISE 7 (ptt WU4 {pg 19}) 
-		it works */
+		it works 
 		int num;
 		String word;
 		String word2;
@@ -233,11 +233,38 @@ public class CharacterStrings {
 //			
 //		}
 		
-		
+		*/
 		
 		/* EXXERCISE 8 (ptt WU4 {pg 19}) 
 		it works */
 		
+
+		
+		
+		
+		
+		
+		
+		/* EXXERCISE 9 (ptt WU4 {pg 19}) 
+		it works 
+		
+		String bigstr;
+		String smallstr;
+		
+		System.out.print("give me a word: ");
+		bigstr=keyboard.nextLine();
+		
+		System.out.print("give me a word 2: ");
+		smallstr=keyboard.nextLine();
+		
+//		smallstr=smallstr.toUpperCase();
+		
+
+		String sol=bigstr.replace(smallstr, smallstr.toUpperCase());
+		
+		System.out.print(sol);
+		
+		*/
 		
 		
 		
