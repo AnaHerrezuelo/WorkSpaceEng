@@ -12,6 +12,9 @@ public class Act02_Methods {
 		
 		
 	}//end of public static void main 
+//	static int adition(int num1, int num2) {
+//		
+//	}
 	
 	public static int askInt(Scanner keyboard) {
 		int number;
