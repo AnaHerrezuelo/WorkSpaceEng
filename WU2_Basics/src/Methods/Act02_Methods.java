@@ -22,4 +22,7 @@ public class Act02_Methods {
 		number=keyboard.nextInt();
 		return number;
 	}
+	
+	
+	
 }//end of public class
