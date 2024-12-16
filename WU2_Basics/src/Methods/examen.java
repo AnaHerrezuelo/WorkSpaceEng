@@ -32,7 +32,7 @@ public class examen {
 							value1=true;
 							switch (selection) {
 							case 1:
-								array=insertValues(keyboard);
+								//array=insertValues(keyboard);
 								break;
 							case 2:
 
