@@ -1,4 +1,4 @@
-package Object;
+package Classes;
 
 public class Act02 {
 	public Act02 (int limit) {

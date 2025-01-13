@@ -1,4 +1,4 @@
-package Object;
+package Classes;
 
 public class printer3D {
 	private int height;

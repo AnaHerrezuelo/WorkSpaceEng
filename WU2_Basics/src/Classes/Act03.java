@@ -1,4 +1,4 @@
-package Object;
+package Classes;
 
 public class Act03 {
 	private int age;
