@@ -1,4 +1,4 @@
-package Object;
+package Classes;
 
 public class Mouse {
 	private int numBot;

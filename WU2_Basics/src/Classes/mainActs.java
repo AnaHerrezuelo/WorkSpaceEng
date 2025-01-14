@@ -1,4 +1,4 @@
-package Object;
+package Classes;
 
 public class mainActs {
 
@@ -41,9 +41,14 @@ public class mainActs {
 		
 		
 		/* ACT09 
-		it works */
-			Act09 draw = new Act09 ();
+		it works (not the oof) */
+			Act09 lightBulb = new Act09(45, Act09.oon);
+			Act09 lightBulb2 = new Act09(66, Act09.oof);
+			lightBulb.printAct();
+			lightBulb2.printAct();
 		
+			
+			
 			
 			
 	}//end void main
