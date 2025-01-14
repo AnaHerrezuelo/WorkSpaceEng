@@ -1,7 +1,8 @@
 package Objects;
 
 public class Act07 {
-	int side1, side2;
+	private int side1, side2;
+	int sel;
 
 	
 	public Act07(int side1, int side2) {
@@ -9,11 +10,32 @@ public class Act07 {
 		setSide2(side2);
 	}
 	
-	public void area(int side1, int side2) {
-		System.out.print("The área is: " + (side1*side2) );
+	
+	
+	public int perimeter() {
+		return (side1+side2)*2;	
+	}
+	
+	//return the perimeter in a diferent unit metric, 
+	//@param unit 0 to cm, 1 to meter, return the requested area or -1 if it is an error
+	public int perimeter (int unit) {
+		if(unit==0) {
+			return (side1+side2)*2*(100);
+		}else if(unit==1) {
+			return (side1+side2)*2;
+		}else {
+			return -1;
+		}
+	}
+	
+	
+	
+	public int area() {
+		//System.out.print("The área is: " + (side1*side2) );
+		return side1*side2;
 	}
 
-	
+
 	
 //GETTERS AND SETTERS
 	public int getSide1() {
