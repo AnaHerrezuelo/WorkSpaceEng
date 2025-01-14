@@ -6,7 +6,7 @@ public class mainActs {
 		// TODO Auto-generated method stub
 		
 		/* ACT01 
-		it works
+		it works 
 			Act01 draw = new Act01 (3);
 		*/
 		
