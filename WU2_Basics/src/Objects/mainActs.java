@@ -63,6 +63,10 @@ public class mainActs {
 		students[2]= new Act09("Cccc",(short) 20);
 		students[3]= new Act09("Dddd",(short) 89);
 		
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i]); 
+        }
+		
 		/* it works it compares 2 students
 		Act09 anselmo = new Act09 ("anselmo", (short)93);
 		Act09 maca = new Act09 ("maca", (short)83);
