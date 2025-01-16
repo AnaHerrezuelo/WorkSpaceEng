@@ -56,12 +56,46 @@ public class mainActs {
 		
 		/* ACT09 
 		IT WORKS */
-		String students [] = new String [3];
-		students[0]="a";
+		//String [] students = new String [];
+		Act09 [] students  = new Act09 [4];
+		students[0]= new Act09("Aaaa",(short) 10);
+		students[1]= new Act09("Bbbb",(short) 15);
+		students[2]= new Act09("Cccc",(short) 20);
+		students[3]= new Act09("Dddd",(short) 89);
+		
+		/* it works it compares 2 students
+		Act09 anselmo = new Act09 ("anselmo", (short)93);
+		Act09 maca = new Act09 ("maca", (short)83);
+		anselmo.isOlderThan(maca);
+		System.out.println(anselmo.isOlderThan(maca));
+		*/
 		
 		
-			
-			
-			
+		
+//		public static int oldestStudent (Act09 group []){
+//			int maxAge=group[0].getAge();
+//			int pos =0;
+//			for(int i=1; i< group.length;i++) {
+//				if(maxAge<group[i].getAge()) {
+//					maxAge = group[i].getAge();
+//					pos=i;
+//				}
+//			}
+//			return = i;
+//		}
+		
+		
+		
+		
+//		public static Act09 giveMeOldestOne (Act09 group []) {
+//			
+//		}
+
+		
+
+		
+		
+		
+		
 	}//end void main
 }//end public class
