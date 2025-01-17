@@ -4,14 +4,18 @@ public class Act09 {
 	private final int NUM=10;
 	private final String NAME;
 	private short age;
+	Act09DNI identifier;
 	
 	public Act09() {
 		NAME="namee";
 		age=0;
+		identifier = new Act09DNI(12345678);
 	}
-	public Act09(String name, short age) {
+	
+	public Act09(String name, short age,  int numDNI  ) {
 		this.NAME=name;
 		setAge(age);
+		identifier = new Act09DNI(numDNI);
 	}
 
 	
@@ -34,9 +38,9 @@ public class Act09 {
 	public String getName() {
 		return NAME;
 	}
-	public void setName(String name) {
-		//this.NAME = name;
-	}
+//	public void setName(String name) {
+//		//this.NAME = name;
+//	}
 	public int getAge() {
 		return age;
 	}
@@ -49,16 +53,20 @@ public class Act09 {
 		
 	}
 	
-//	public  void printAct () {
-//		System.out.println(this.toString());
-//	}
+
+	
+
+	
 	
 	@Override
 	public String toString() {
-		return "Act09 [NUM=" + NUM + ", NAME=" + NAME + ", age=" + age + "]";
+		return "Act09 [NUM=" + NUM + ", NAME=" + NAME + ", age=" + age + ", DNI=" + identifier.toString() + "]";
 	}
 	
 
+//	public  void printAct () {
+//		System.out.println(toString());
+//	}
 	
 	
 }//end class Act09

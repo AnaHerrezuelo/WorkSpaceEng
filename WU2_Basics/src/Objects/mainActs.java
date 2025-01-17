@@ -1,6 +1,6 @@
 package Objects;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class mainActs {
 	public static void main(String[] args) {
@@ -55,17 +55,18 @@ public class mainActs {
 		
 		
 		/* ACT09 
-		IT WORKS */
+		IT DOESN'T WORKS */
 		//String [] students = new String [];
 		Act09 [] students  = new Act09 [4];
-		students[0]= new Act09("Aaaa",(short) 10);
-		students[1]= new Act09("Bbbb",(short) 15);
-		students[2]= new Act09("Cccc",(short) 20);
-		students[3]= new Act09("Dddd",(short) 89);
+		students[0]= new Act09("Aaaa",(short) 10, 12345678);
+		students[1]= new Act09("Bbbb",(short) 15, 87654321);
+		students[2]= new Act09("Cccc",(short) 20, 12345678);
+		students[3]= new Act09("Dddd",(short) 89, 12345678);
 		
         for (int i = 0; i < students.length; i++) {
             System.out.println(students[i]); 
         }
+        
 		
 		/* it works it compares 2 students
 		Act09 anselmo = new Act09 ("anselmo", (short)93);
@@ -73,33 +74,28 @@ public class mainActs {
 		anselmo.isOlderThan(maca);
 		System.out.println(anselmo.isOlderThan(maca));
 		*/
-		
-		
-		
-//		public static int oldestStudent (Act09 group []){
-//			int maxAge=group[0].getAge();
-//			int pos =0;
-//			for(int i=1; i< group.length;i++) {
-//				if(maxAge<group[i].getAge()) {
-//					maxAge = group[i].getAge();
-//					pos=i;
-//				}
-//			}
-//			return = i;
-//		}
-		
-		
-		
-		
-//		public static Act09 giveMeOldestOne (Act09 group []) {
-//			
-//		}
-
-		
-
-		
-		
-		
+               
+//        Act09DNI dni = new Act09DNI(34);
+//        Act09 anselmo = new Act09 ("anselmo", (short)93);
 		
 	}//end void main
+	
+	
+/*CLASSES ACTIVITY 09*/
+//	public static int oldestStudent (Act09 group []){
+//	int maxAge=group[0].getAge();
+//	int pos =0;
+//	for(int i=1; i< group.length;i++) {
+//		if(maxAge<group[i].getAge()) {
+//			maxAge = group[i].getAge();
+//			pos=i;
+//		}
+//		return i;
+//	}
+//	}
+	
+		
+	
+	
+	
 }//end public class
