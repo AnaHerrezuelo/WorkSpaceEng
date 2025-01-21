@@ -21,10 +21,11 @@ public class MainActClas {
            
         
         //mostrar information
-        account.printToString();        
-        account.printAvg();        
-        account.printFailed();        
-	}//end main
+	        account.printToString();        
+	        account.printAvg();        
+	        account.printFailed();
+	        
+	}//end public static void main(String[] args
 	
 	
 //	public static void introduceInfo (String name, String group, Scanner keyboard, int [] grades) {
@@ -40,4 +41,4 @@ public class MainActClas {
 //		}//end introduceInfo
 //	}
 
-}
+}//end public class MainActClas 
