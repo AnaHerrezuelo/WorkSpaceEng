@@ -35,10 +35,10 @@ public class Alumno {
 		System.out.print("gave me the group:");
 		this.group = keyboard.next();
 		
-		for(int i=0; i<grades.length;i++) {
-		System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
-			this.group[i]= keyboard.next();
-		}
+//		for(int i=0; i<grades.length;i++) {
+//		System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
+//			this.group[i]= keyboard.next();
+//		}
 		
 	    return (correct);
 	}
