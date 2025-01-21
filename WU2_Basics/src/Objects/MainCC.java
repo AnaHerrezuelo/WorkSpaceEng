@@ -52,12 +52,25 @@ public class MainCC {
 			case 4:
 				account.printToString();
 				break;
+			case 5:
+				System.out.println("Bye");
+				break;
+				
+			case 6:
+		        CuentaCorriente account1 = new CuentaCorriente("Juan", 500);
+		        CuentaCorriente account2 = new CuentaCorriente("Ana", 12345678, 1000);
+		        
+		        System.out.println("Cuenta 1:");
+		        account1.showAccount();
+		        System.out.println("Cuenta 2:");
+		        account2.showAccount();
+				break;
 				
 			default:
 				System.out.println("Try again");
 			}
 			
-			account.printToString();
+			//account.printToString();
 			
 		}while(sel!=5);
 		

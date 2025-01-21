@@ -11,11 +11,28 @@ public class CuentaCorriente {
 	}
 
 	
-//	public CuentaCorriente( String name, int dni) {
-//		this.name=name;
-//		this.dni=dni;
-//		this.balance=0;
-//	}
+	public CuentaCorriente( String name, int balance) {
+//		this.name="aa";
+//		this.balance=123;
+		this.name=name;
+		this.balance=balance;
+	}
+	
+	public CuentaCorriente( String name, int dni, int balance) {
+//		this.name="bb";
+//		this.dni=123;
+//		this.balance=200;
+		this.name=name;
+		this.dni=dni;
+		this.balance=balance;
+	}
+	
+    public void showAccount() {
+        System.out.println("Nombre: " + name);
+        System.out.println("DNI: " + dni);
+        System.out.println("Saldo: " + balance);
+        System.out.println("-------------------------");
+    }
 	
 	
 //	public String insertCostumer (Scanner keyboard) {
@@ -43,10 +60,19 @@ public class CuentaCorriente {
 	}
 	
 	public int getCashOut (Scanner keyboard) {
-		System.out.print("gave me the the amount of cash:");
-		this.amount = keyboard.nextInt();	
-		setAmount(this.amount);
-		this.balance = this.balance - this.amount;
+		if(this.balance<1) {
+			System.out.println("You have: " + this.balance + "€, you must introduce cash");
+		}else {
+			do {
+				System.out.println("You have: " + this.balance + "€");
+				System.out.print("How much do you want to get out:");
+				this.amount = keyboard.nextInt();	
+				setAmount(this.amount);
+				System.out.println("You can't spend more money than what's in your account");
+			}while(this.balance<this.amount);
+			this.balance = this.balance - this.amount;
+		}
+
 		
         return balance;
 	}

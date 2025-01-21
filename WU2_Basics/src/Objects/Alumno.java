@@ -58,17 +58,27 @@ public class Alumno {
 	
 	public int [] failed () {
 //		int [] failedgrades  = new int [grades.length];
+	    int count = 0;
+	    for (int i=0; i<grades.length;i++) {
+	        if (grades[i] < 5) {
+	            count++;
+	        }
+	    }
+		int [] failedGrades  = new int [count];
+	    int count2 = 0; 
+	    
 		for(int i=0; i<grades.length;i++) {
 			if(grades[i]<5) {
-				System.out.print(grades[i]);
+				failedGrades[count2]=grades[i];	
+				count2++;
 			}
 			
 		}
-		return grades;
+		return failedGrades;
 	}
 	
 	public void printFailed() {
-		System.out.println("FAILED grades: " +failed());
+		System.out.println("FAILED grades: " +Arrays.toString(failed()));
 	}
 	
 	
