@@ -14,12 +14,10 @@ public class Alumno {
 	public Alumno (String name) {
 		this.name=name;
 	}
-	
 	public Alumno (String name, String group) {
 		this.name=name;
 		this.group=group;;
 	}
-	
 	public Alumno (String name, String group, int [] grades  ) {
 		this.name=name;
 		this.group=group;
@@ -34,20 +32,13 @@ public class Alumno {
 		
 		System.out.print("gave me the group:");
 		this.group = keyboard.next();
-		
-<<<<<<< HEAD
-//		for(int i=0; i<grades.length;i++) {
-//		System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
-//			this.group[i]= keyboard.next();
-//		}
-=======
+
 		for(int i=0; i<grades.length;i++) {
 		System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
 			this.grades[i]= keyboard.nextInt();
 		}
 		this.correct=true;		
 		System.out.println("you have enter all the data");
->>>>>>> f3aad36b4fa3da08bfc4a59d394d0878a49c0a59
 		
 	    return (correct);
 	}
