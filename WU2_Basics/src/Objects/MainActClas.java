@@ -6,8 +6,7 @@ public class MainActClas {
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
 		
-		String name = null, group = null;
-		//int grade;
+		String name, group;
 		int [] grades  = new int [4];
 		
 //		Alumno [] students  = new Alumno [4];
@@ -16,13 +15,15 @@ public class MainActClas {
 		
 		
         //introduce information
-//	        account.introduceInfo(keyboard);
+	       account.introduceInfo(keyboard);
 
         	
-        
+           
         
         //mostrar information
         account.printToString();        
+        account.printAvg();        
+        account.printFailed();        
 	}//end main
 	
 	

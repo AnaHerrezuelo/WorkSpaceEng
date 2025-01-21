@@ -35,37 +35,54 @@ public class Alumno {
 		System.out.print("gave me the group:");
 		this.group = keyboard.next();
 		
+<<<<<<< HEAD
 //		for(int i=0; i<grades.length;i++) {
 //		System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
 //			this.group[i]= keyboard.next();
 //		}
+=======
+		for(int i=0; i<grades.length;i++) {
+		System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
+			this.grades[i]= keyboard.nextInt();
+		}
+		this.correct=true;		
+		System.out.println("you have enter all the data");
+>>>>>>> f3aad36b4fa3da08bfc4a59d394d0878a49c0a59
 		
 	    return (correct);
 	}
 	
+	public int average () {
+		int avg=0;
+		for(int i=0; i<grades.length;i++) {
+			avg=avg + this.grades[i];
+		}
+		avg=avg/5;
+		//System.out.println("AVERAGE: " + avg);
+		return avg;
+	}
+	public void printAvg() {
+		System.out.println("AVERAGE: " +average());
+	}
+	
+	public int [] failed () {
+//		int [] failedgrades  = new int [grades.length];
+		for(int i=0; i<grades.length;i++) {
+			if(grades[i]<5) {
+				System.out.print(grades[i]);
+			}
+			
+		}
+		return grades;
+	}
+	
+	public void printFailed() {
+		System.out.println("FAILED grades: " +failed());
+	}
 	
 	
-//	public String introduceAlumn (Scanner keyboard) {
-//		System.out.print("gave me the name:");
-//		this.name = keyboard.next();
-//		
-//        return (name);
-//	}
-//	
-//	public String introduceGroup (Scanner keyboard) {
-//		System.out.print("gave me the group:");
-//		this.group = keyboard.next();
-//		
-//		return (group);
-//	}
-//	
-//	public int []  introduceGrades (Scanner keyboard) {
-//		for(int i=0; i<grades.length;i++) {
-//			System.out.print("gave me the Grades of the student "+ i +"/"+ grades.length +":");
-//			this.group[i]= keyboard.next();
-//		}
-//		return (group);
-//	}
+	
+	
 	
 	
 	
