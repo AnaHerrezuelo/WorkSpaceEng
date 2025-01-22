@@ -3,8 +3,10 @@ package Objects;
 import java.util.Scanner;
 
 public class CuentaCorriente {
+	
 	String name;
 	int dni, balance, amount;
+	boolean correct;
 	
 	public CuentaCorriente() {
 
@@ -43,21 +45,31 @@ public class CuentaCorriente {
 //		
 //        return (name,dni);
 //	}
-
-	
-	public String insertCostumerName (Scanner keyboard) {
-		System.out.print("gave me the name:");
+    
+    public boolean insertInfo(Scanner keyboard) {
+		System.out.print("gave me the name of the costumer:");
 		this.name = keyboard.next();
 		
-        return name;
-	}
-	
-	public int insertCostumerDni (Scanner keyboard) {
-		System.out.print("gave me the dni:");
+		System.out.print("gave me the dni of the costumer:");
 		this.dni = keyboard.nextInt();	
 		
-        return dni;
-	}
+    	return correct;
+    }
+
+	
+//	public String insertCostumerName (Scanner keyboard) {
+//		System.out.print("gave me the name:");
+//		this.name = keyboard.next();
+//		
+//        return name;
+//	}
+//	
+//	public int insertCostumerDni (Scanner keyboard) {
+//		System.out.print("gave me the dni:");
+//		this.dni = keyboard.nextInt();	
+//		
+//        return dni;
+//	}
 	
 	public int getCashOut (Scanner keyboard) {
 		if(this.balance<1) {

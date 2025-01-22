@@ -8,10 +8,12 @@ public class MainCC {
 		Scanner keyboard = new Scanner(System.in);
 
         CuentaCorriente account = new CuentaCorriente();
+        CuentaCorrienteGestor gestor = new CuentaCorrienteGestor();
 		
-		
-		int dni, balance, sel, amount;
-		String name;
+		int sel;
+//		int dni, balance, sel, amount;
+//		String name;
+		//String [] costumers  = new String [4];
 		
 		do {
 			System.out.println("what do u want to get?: ");
@@ -24,17 +26,9 @@ public class MainCC {
 			
 			switch(sel) {
 			case 1:
-		        account.insertCostumerName(keyboard);
-		        account.insertCostumerDni(keyboard); 
-		        
-		        
-//				System.out.print("gave me the name:");
-//				name = keyboard.next();
-//				System.out.print("gave me the dni:");
-//				dni = keyboard.nextInt();
-//				CuentaCorriente deal1 = new CuentaCorriente(name,dni);
-	
-				
+//		        account.insertInfo(keyboard); 
+		        gestor.insertInfo(keyboard); 
+		       		
 				break;
 				
 			case 2:
@@ -51,6 +45,7 @@ public class MainCC {
 				break;
 			case 4:
 				account.printToString();
+				gestor.printToString();
 				break;
 			case 5:
 				System.out.println("Bye");
