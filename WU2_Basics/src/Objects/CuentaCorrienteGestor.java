@@ -3,7 +3,7 @@ package Objects;
 import java.util.Scanner;
 
 public class CuentaCorrienteGestor {
-	String name;
+	String nameG;
 	int mvl;
 	boolean mvlDone=false;
 	int impMax;
@@ -13,15 +13,15 @@ public class CuentaCorrienteGestor {
 		
 	}
 	
-	public CuentaCorrienteGestor (	String name, int mvl, int impMax) {
-		this.name=name;
+	public CuentaCorrienteGestor (	String nameG, int mvl, int impMax) {
+		this.nameG=nameG;
 		this.mvl=mvl;
 		this.impMax=10000;
 	}
 	
     public boolean insertInfo(Scanner keyboard) {
 		System.out.print("gave me the name of the gestor:");
-		this.name = keyboard.next();
+		this.nameG = keyboard.next();
 		
 		if(this.mvlDone==true) {
 			System.out.println("You already has introduce the mvl");
@@ -47,7 +47,7 @@ public class CuentaCorrienteGestor {
 
 	@Override
 	public String toString() {
-		return "CuentaCorrienteGestor [name=" + name + ", mvl=" + mvl + ", impMax=" + impMax 
+		return "CuentaCorrienteGestor [name=" + nameG + ", mvl=" + mvl + ", impMax=" + impMax 
 				+ "]";
 	}
     

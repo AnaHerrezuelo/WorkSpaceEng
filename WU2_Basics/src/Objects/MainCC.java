@@ -11,9 +11,7 @@ public class MainCC {
         CuentaCorrienteGestor gestor = new CuentaCorrienteGestor();
 		
 		int sel;
-//		int dni, balance, sel, amount;
-//		String name;
-		//String [] costumers  = new String [4];
+
 		
 		do {
 			System.out.println("what do u want to get?: ");
@@ -21,22 +19,18 @@ public class MainCC {
 					+ "\ndeal 2 to get some cash out: "
 					+ "\ndeal 3 for make a deposit"
 					+ "\ndeal 4 for show info"
-					+ "\ndeal 5 for exit");
+					+ "\ndeal 5 for exit"
+					+ "\ndeal 6 for ");
 			sel=keyboard.nextInt();
 			
 			switch(sel) {
 			case 1:
-//		        account.insertInfo(keyboard); 
-		        gestor.insertInfo(keyboard); 
-		       		
+		        account.insertInfo(keyboard); 
+//		        gestor.insertInfo(keyboard); 
 				break;
 				
 			case 2:
 				account.getCashOut(keyboard); 
-				
-//				CuentaCorriente deal1 = new CuentaCorriente();
-//				System.out.print("you have this balance: "+ deal1.balance +", how much do you want to take?:");
-//				balance = keyboard.nextInt();
 				break;
 				
 			case 3:
@@ -68,14 +62,6 @@ public class MainCC {
 			//account.printToString();
 			
 		}while(sel!=5);
-		
-		
-		
-		
-		//CuentaCorriente [] students  = new CuentaCorriente [4];
-		
-		
-		
 		//account.printToString();
 		
 	}
