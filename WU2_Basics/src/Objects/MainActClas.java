@@ -2,6 +2,7 @@ package Objects;
 
 import java.util.Scanner;
 
+//Alumno.java
 public class MainActClas {
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
