@@ -23,10 +23,18 @@ public class bucket {
 	
 	public void showBucket() {
 		System.out.println("#      #");
+//		for(int i=0; i < capacity; i++) {
+//			//System.out.println("#      #");
+//			if(capFill>i) {
+//				System.out.println("#~~~~~~#");
+//			}
+//		}
+		
 		for(int i=0; i < capacity; i++) {
-			//System.out.println("#      #");
-			if(capFill>i) {
+			if(capFill>=capacity-i) {
 				System.out.println("#~~~~~~#");
+			}else {
+				
 			}
 		}
 		System.out.println("########");
