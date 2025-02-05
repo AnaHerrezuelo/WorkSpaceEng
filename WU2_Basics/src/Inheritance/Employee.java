@@ -2,19 +2,17 @@ package Inheritance;
 
 import java.util.Scanner;
 
-public class employee {
-	String name;
-	int salary;
+public class Employee {
+	private String name;
+	float salary;
 	
-//	employee(){
-//		
-//	}
-//	
-//	public employee(String name, int salary) {
-//		super();
-//		this.name = name;
-//		this.salary = salary;
-//	}
+	Employee(){
+	}
+	public Employee(String name, float salary2) {
+		this.name = name;
+		this.salary = salary2;
+	}
+	
 
 	public void askEmpData(Scanner keyboard) {
 			System.out.println("give me the name: ");
@@ -33,7 +31,7 @@ public class employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getSalary() {
+	public float getSalary() {
 		return salary;
 	}
 	public void setSalary(int salary) {
@@ -55,7 +53,7 @@ public class employee {
 
 	@Override
 	public String toString() {
-		return "employee [name=" + name + ", salary=" + salary + "]";
+		return "employee [name=" + name + ", salary=" + salary + "]\n";
 	}
 	
 	
