@@ -16,13 +16,18 @@ public class mainEmployee {
 		Manager [] manager = new Manager[2];
 		
 		
+		
+//		Manager man = new Manager();
+//		man.askManData(keyboard);
+//		man.printToString();
+		
+		
 		for(int i=0;i<employees.length;i++) {
 			System.out.println("employee " + (i+1));
 			employees[i]= new Employee();
 			employees[i].askEmpData(keyboard);
 			
-		}
-		
+		}	
 		for(int i=0;i<manager.length;i++) {
 			System.out.println("manager " + (i+1));
 			manager[i]= new Manager();

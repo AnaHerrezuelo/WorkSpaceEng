@@ -8,7 +8,7 @@ public class Manager extends Employee{
 
 //	public void setname (String name) { //to use a private variable 
 //		super.setName(name); 
-//	} 
+//	}                                                   
 	public Manager(){
 	}	
 	public Manager(String name, float salary2, String department, String degree) {
