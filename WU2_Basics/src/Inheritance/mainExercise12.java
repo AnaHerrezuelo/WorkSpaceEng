@@ -1,5 +1,5 @@
+//main EmployeeMichelin, boss
 package Inheritance;
-
 
 public class mainExercise12 {
 	public static void main(String[] args) {
@@ -21,4 +21,3 @@ public class mainExercise12 {
 		
 	}//	end public static void main(String[] args)
 }// end public class mainExercise12
- 

@@ -32,12 +32,6 @@ public class EmployeeMichelin {
 //		System.out.println("Give the age: ");
 //		age=keyboard.nextInt();
 		
-
-			System.out.println("give me the name of the company: ");
-			nameCom=keyboard.next();
-			
-//			System.out.println("Give the salary base: "); 
-//			salaryBase=keyboard.nextInt();
 			
 //		System.out.println("Give the salary increase: ");
 //		salaryInc=keyboard.nextInt();
