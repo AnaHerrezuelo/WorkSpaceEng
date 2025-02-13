@@ -4,6 +4,8 @@ package Objects;
 public class mainLightBulb {
 	
 //	public static void main(String[] args) {
+//		
+//	}
 
 		int NUM=5;
 		lightBulb [] flat= new lightBulb[NUM];
@@ -48,17 +50,21 @@ public class mainLightBulb {
 	}
 	
 	public static void totalConsumption (lightBulb [] flat) {
-		long a=0;
+		int total=0;
 		for(int i=0; i < flat.length; i++) {
-			
+	        if (flat[i].isState()) {  
+	            total += flat[i].getPower();
+	            //total = total +  flat[i].getPower();
+	        }
 		}
+		 System.out.println("Consumo total: " + total + "W");
 	}
 	
 	
 	
 	
 	//FLOOR
-	public static void printFlat (){
+	public void printFlat (){
 		for(int i=0; i < flat.length; i++) {
 			flat[i].printToString();
 		}
