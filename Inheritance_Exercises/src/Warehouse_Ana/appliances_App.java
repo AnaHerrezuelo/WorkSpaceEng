@@ -30,7 +30,8 @@ public class appliances_App {
 		
 		
 		for(int i=0;i<machine.length;i++) {
-			machine[i].printToString();
+			//machine[i].printToString();
+			//machine[i].toString();
 		}
 		
 		

@@ -2,15 +2,17 @@ package Casino;
 
 public class MainCasino {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Game game = new Game ();
+
+		Game game = new Game();
 		game.askData();
+		game.printToString();
 		
-		CardGame cards = new CardGame ();
-		cards.toString();
+		CardGame cards = new CardGame();
+		cards.printToString();
 		
+		DiceGame dice = new DiceGame();
 		
+
 		
 		
 

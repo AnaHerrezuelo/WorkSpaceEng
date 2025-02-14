@@ -1,13 +1,18 @@
 package Casino;
 
 public class CardGame extends Game {
+
+	
 	private int players, totalcards, dealtCards ;
+
+
+	
 	
 	public CardGame() {
 		
 	}
-	public CardGame(String name, float bet, int players, int totalcards, int dealtCards) {
-		super(name, bet);
+	public CardGame(String name, int players, int totalcards, int dealtCards) {
+		super(name);
 		this.players = players;
 		this.totalcards = 0;
 		this.dealtCards = 0;
@@ -23,7 +28,7 @@ public class CardGame extends Game {
 	@Override
 	public String toString() {
 		return super.toString()
-				+ "CardGame [players=" + players + ", totalcards=" + totalcards + "]";
+				+ "CardGame [players=" + players + ", totalcards=" + totalcards + "]" + super.toString();
 	}
 	
 	

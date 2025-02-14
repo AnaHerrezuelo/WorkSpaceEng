@@ -14,6 +14,10 @@ public class Game {
 	public Game() {
 		
 	}
+	public Game(String name) {
+		super();
+		this.name = name;
+	}
 	public Game(String name, float bet) {
 		super();
 		this.name = name;
@@ -46,10 +50,13 @@ public class Game {
 	public void printToString() {
 		System.out.println(toString());
 	}
+	
 	@Override
 	public String toString() {
-		return "Game [keyboard=" + keyboard + ", name=" + name + ", bet=" + bet + ", balance=" + balance + "]";
+		return "Game [name=" + name + ", balance=" + balance + "]";
 	}
+	
+
 
 	
 	
