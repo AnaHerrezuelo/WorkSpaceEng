@@ -1,49 +1,50 @@
 package TryCatch;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ex06 {
-
 	public static void main(String[] args) {
-		Scanner keyboard = new Scanner(System.in);
-		int div, divisor, count=0;
-		boolean keep;
+		int num;
 		
-		do {
-			try {
-				div = askInt(keyboard);
-				System.out.println("Give me the nummber  2: ");
-				divisor=keyboard.nextInt();
-				
-				int result=div/divisor;
-				System.out.println("result: " + result);
-			}catch(ArithmeticException e) {
-				System.out.println("You cannot insert 0 as the divisor");
-				count=3;
-			}catch(InputMismatchException obj) {
-				System.out.println("you cannot insert letters");
-				System.out.println(obj.toString());
-				count++;
-				System.out.println(count);
-			}catch(Exception e) {
-				System.out.println("unexpected error");
-			}finally {
-				keyboard.nextLine();
-				System.out.println("we closed the program, There are too many wrong entries");
-			}	
-		}while(count<3);
-
+		System.out.println("Insert a number ");
+		
+		try {
+			num=pedirEntero();
+			System.out.println("has inserted: " + num);
+		}catch(NumberFormatException e) {
+			System.out.println("you has inserted letters instead of numbers");
+		}
+		
+		
+		
 	}//end public static void main(String[] args) 
-
-	private static int askInt (Scanner keyboard) {
-		int div;
-		System.out.println("Give me the nummber  1: ");
-		div=keyboard.nextInt();
-		return div;
+	static String askString() {
+		String cadena="";
+		Scanner keyboard = new Scanner(System.in);
+		try {
+			cadena=keyboard.next();
+		}catch(Exception e) {
+			System.out.println("Exit, error");
+			System.exit(0);
+		}
+		keyboard.close();
+		return cadena;
 	}
-
-}
-
-
-
+	
+	static  int pedirEntero() {
+		String cadena;
+		int num;
+		
+		cadena=askString();
+		num=Integer.parseInt(cadena);
+		
+		return num;
+	}
+	public static void askInterger(Scanner keyboard, String mesage) {
+		int num;
+	//	String cad=askString(keyboard, mesage);
+		
+		
+				
+	}
+}//end class Ex06

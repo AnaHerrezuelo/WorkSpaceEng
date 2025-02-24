@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 public class mainPrinter3D {
 	public static void main(String[] args) {

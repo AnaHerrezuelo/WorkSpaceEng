@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 public class Act03 {
 	private int age;
