@@ -18,7 +18,7 @@ public class Clock {
 			for(min=0; min<60;min++) {
 				for(sec=0; sec<60;sec++) {
 					System.out.println(h + " : " + min + " : " + sec);
-					Thread.sleep(5000); 
+					Thread.sleep(1000); 
 				}
 			}
 		}
