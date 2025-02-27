@@ -1,4 +1,4 @@
-package Warehouse_Ana;
+package Warehouse_Ana2;
 
 public class Refrigerator extends Machines {
 	boolean froze=false;

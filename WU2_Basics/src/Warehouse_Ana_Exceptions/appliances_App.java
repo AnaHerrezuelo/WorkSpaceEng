@@ -1,25 +1,30 @@
-package Warehouse_Ana;
+package Warehouse_Ana_Exceptions;
 
 
 //import java.util.Scanner;
 
 public class appliances_App {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatexception {
 //		Scanner keyboard = new Scanner(System.in);
 		
-		final int MAX=8;
-		Machines machine []= new Machines [MAX];
+		final int MAX=2;
 		
-		machine[0]=new Machines('a',3);
-		machine[1]=new Machines('a',3);
-		machine[2]=new Dishwashers('a',3, 3, 45);
-		machine[3]=new Dishwashers('a',3, 3, 45);
-		machine[4]=new WashingMachines('a',3, 3, 45);
-		machine[5]=new WashingMachines('a',3, 3, 45);
-		machine[6]=new Refrigerator('a',3, true);
-		machine[7]=new Refrigerator('a',3, true);
-
+		Machines machine []= new Machines [MAX];
+		try {
+		machine[0]=new Machines('a', "r");
+		machine[1]=new Machines('a', "5");
+//		machine[2]=new Dishwashers('a',3, 3, 45);
+//		machine[3]=new Dishwashers('a',3, 3, 45);
+//		machine[4]=new WashingMachines('a',3, 3, 45);
+//		machine[5]=new WashingMachines('a',3, 3, 45);
+//		machine[6]=new Refrigerator('a',3, true);
+//		machine[7]=new Refrigerator('a',3, true);
+		}catch(NumberFormatException e){
+			System.err.println("no letters");
+		}
+		
+		
 		
 //		for(int i=0;i<machine.length;i++) {
 //			System.out.println("Machine " + (i+1));
@@ -29,9 +34,10 @@ public class appliances_App {
 //		}	
 		
 		
+		
 		for(int i=0;i<machine.length;i++) {
-			//machine[i].printToString();
-			//machine[i].toString();
+			machine[i].printToString();
+			machine[i].toString();
 		}
 		
 		

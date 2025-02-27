@@ -1,4 +1,4 @@
-package Warehouse_Ana;
+package Warehouse_Ana_Exceptions;
 
 public class WashingMachines extends WaterWasters{
 	int maxLaundry;

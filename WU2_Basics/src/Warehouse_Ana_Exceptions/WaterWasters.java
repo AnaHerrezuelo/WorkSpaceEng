@@ -1,4 +1,4 @@
-package Warehouse_Ana;
+package Warehouse_Ana_Exceptions;
 
 public class WaterWasters extends Machines{
 	int waterConsumption;
@@ -25,8 +25,15 @@ public class WaterWasters extends Machines{
 	}
 
 	public void setWaterConsumption(int waterConsumption) {
+//		try {
+//			
+//		}catch(negativeNumberException e) {
+//			
+//		}
 		this.waterConsumption = waterConsumption;
 	}
+	
+	
 	
 	
 

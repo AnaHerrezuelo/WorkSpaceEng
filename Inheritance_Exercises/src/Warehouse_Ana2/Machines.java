@@ -1,4 +1,4 @@
-package Warehouse_Ana;
+package Warehouse_Ana2;
 
 import java.util.Scanner;
 
