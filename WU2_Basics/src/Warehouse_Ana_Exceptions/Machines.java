@@ -12,11 +12,18 @@ public class Machines {
 	public Machines() {
 		
 	}
+	
+	public Machines(char energyRating, int wconsumption) {
+		super();
+		setId(id);
+		this.energyRating = energyRating;
+		this.Wconsumption = wconsumption;
+//		setWconsumption(wconsumption);
+	}
 
 	public Machines(char energyRating, String wconsumption) throws NumberFormatexception {
 		super();
 		setId(id);
-//		this.id=id;
 		this.energyRating = energyRating;
 //		this.Wconsumption = wconsumption;
 		setWconsumption(wconsumption);
@@ -60,10 +67,13 @@ public class Machines {
 	public int getWconsumption() {
 		return Wconsumption;
 	}
+	
 
 //	public void setWconsumption(int wconsumption) throws NumberFormatexception {
 //		this.Wconsumption = wconsumption;
 //	}
+	
+	
 	
 	public void setWconsumption(String wconsumption) throws NumberFormatexception {
 		if(Integer.parseInt(wconsumption)>0) {

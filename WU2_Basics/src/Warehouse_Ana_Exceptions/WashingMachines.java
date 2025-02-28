@@ -12,7 +12,13 @@ public class WashingMachines extends WaterWasters{
 		super(energyRating, wconsumption, waterConsumption);
 		this.maxLaundry = maxLaundry;
 	}
-
+	
+	public WashingMachines(char energyRating, String wconsumption, int waterConsumption, int maxLaundry)
+			throws NumberFormatexception, negativeNumberException {
+		super(energyRating, wconsumption, waterConsumption);
+//		this.maxLaundry = maxLaundry;
+		setMaxLaundry(maxLaundry);
+	}
 
 
 
@@ -24,12 +30,21 @@ public class WashingMachines extends WaterWasters{
 	
 	
 
+
+
+
 	public int getMaxLaundry() {
 		return maxLaundry;
 	}
 
-	public void setMaxLaundry(int maxLaundry) {
-		this.maxLaundry = maxLaundry;
+	public void setMaxLaundry(int maxLaundry) throws negativeNumberException {
+//		this.maxLaundry = maxLaundry;
+		
+		if(maxLaundry>0) {
+			this.maxLaundry = maxLaundry;
+		}else {
+			throw new negativeNumberException("error");
+		}
 	}
 
 	//PRINT

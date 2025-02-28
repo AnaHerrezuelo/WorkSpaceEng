@@ -11,12 +11,32 @@ public class Dishwashers extends WaterWasters{
 		this.maxServices = maxServices;
 	}
 	
+	
+	
+	public Dishwashers(char energyRating, String wconsumption, int waterConsumption, int maxServices)
+			throws NumberFormatexception, negativeNumberException {
+		super(energyRating, wconsumption, waterConsumption);
+//		this.maxServices = maxServices;
+		setMaxServices(maxServices);
+	}
+	
 //	public void askData() {
 //		super.askData();
 //		System.out.println("give me the energy rating: ");
 //		maxServices=keyboard.nextInt();
 //	}
 	
+	public int getMaxServices() {
+		return maxServices;
+	}
+	public void setMaxServices(int maxServices) throws negativeNumberException{
+//		this.maxServices = maxServices;
+		if(maxServices>0) {
+			this.maxServices = maxServices;
+		}else {
+			throw new negativeNumberException("error");
+		}
+	}
 	
 	
 	//PRINT
@@ -24,6 +44,7 @@ public class Dishwashers extends WaterWasters{
 		System.out.println(toString());
 	}
 	
+
 	@Override
 	public String toString() {
 		String result = "Diswashers [maxServices=" + maxServices + "]";
