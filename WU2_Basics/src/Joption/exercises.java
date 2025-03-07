@@ -31,11 +31,11 @@ public class exercises {
 		 //Variety of options
 		 Object [] array = {"Pizza", "Hamburger", "fish"};
 		 JOptionPane.showOptionDialog(parentComponent, 
-				 "What do u want to eat? ", 
-				 "eatt??", 
-				 JOptionPane.YES_NO_OPTION, 
-				 JOptionPane.WARNING_MESSAGE, null, array, 
-				 array[2]
+					 "What do u want to eat? ", 
+					 "eatt??", 
+					 JOptionPane.YES_NO_OPTION, 
+					 JOptionPane.WARNING_MESSAGE, null, array, 
+					 array[2]
 				 );
 		 
 		 
