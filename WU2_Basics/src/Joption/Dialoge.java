@@ -3,16 +3,16 @@ package Joption;
 import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
-class CancelButtonException extends RuntimeException{
-	public CancelButtonException(String string) {
-		
-	}//end public CancelButtonException(String string)
-}// private class CancelButtonException extends RuntimeException
+//class CancelButtonException extends RuntimeException{
+//	public CancelButtonException(String string) {
+//		
+//	}//end public CancelButtonException(String string)
+//}// private class CancelButtonException extends RuntimeException
 
 public class Dialoge extends JOptionPane {
 	public static void main(String[] args) {
 //			 dialogeInt();
-		 Object [] array = {"Pizza", "Hamburger", "fish"};
+//		 Object [] array = {"Pizza", "Hamburger", "fish"};
 //		 dialogOptions(null, args);
 	} //end  public static void main(String[] args
 	

@@ -13,10 +13,20 @@ public class MainApp {
 //			 System.err.println(e.getMessage());
 //		}
 		
+//		String [] array = {"Pizza", "Hamburger", "fish"};
+//		Dialoge.dialogOptions("a", array);
 		
-//		Dialoge.dialogOptions("a", args);
-		Dialoge.dialogWarning("messageeeee");
+//		Dialoge.dialogWarning("messageeeee");
 		
+		
+		
+		try {
+			float num=Dialoge2.dialogFloat();
+			System.out.println(num);
+		}catch(NumberFormatException e) {
+			System.err.println("bad");
+			System.err.println(e.getMessage());
+		}
 		
 		
 	}//end  public static void main(String[] args

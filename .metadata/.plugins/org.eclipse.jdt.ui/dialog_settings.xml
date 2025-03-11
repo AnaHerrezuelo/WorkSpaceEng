@@ -5,6 +5,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
 	<item key="filters_last_used" value="filter_imports;"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\anal.herher\Desktop\JAR"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -142,11 +143,13 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\anal.herher\Desktop\JAR\eje.jar"/>
+			<item value="C:\Users\anal.herher\Desktop\JAR\Dialoge2.jar"/>
 			<item value="C:\Users\USUARIO\Desktop\eje2.jar"/>
 			<item value="C:\Users\USUARIO\Desktop\eje.jar"/>
 		</list>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="3"/>
+		<item key="pageIndex" value="2"/>
 	</section>
 </section>
