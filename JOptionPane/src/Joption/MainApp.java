@@ -20,12 +20,14 @@ public class MainApp {
 		
 		
 		
+		
 		try {
 			float num=Dialoge2.dialogFloat();
 			System.out.println(num);
 		}catch(NumberFormatException e) {
 			System.err.println("bad");
-			System.err.println(e.getMessage());
+//			System.err.println(e.getMessage());
+			e.printStackTrace();
 		}
 		
 		

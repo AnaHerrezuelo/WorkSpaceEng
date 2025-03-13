@@ -22,6 +22,8 @@ public class Dialoge2 extends JOptionPane{
 		if(numStr==null) {
 			throw new CancelButtonException("press cancel");
 		}
+		
+		numStr= numStr.replace(',', '.');
 		float num=Float.parseFloat(numStr);
 		return num;
 	}
