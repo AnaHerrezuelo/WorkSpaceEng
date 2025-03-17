@@ -1,4 +1,4 @@
-package instruments;
+package instrumentsArrayList;
 
 public class mainAppInstruments {
 
