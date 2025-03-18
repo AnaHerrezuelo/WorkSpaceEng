@@ -5,7 +5,7 @@ public class mainAppInstruments {
 	public static void main(String[] args) {
 		
 		instrument ins = new instrument();
-		ins.insertMelody();
+//		ins.insertMelody();
 //		ins.printMelody();
 //		ins.duration();
 		
@@ -15,6 +15,16 @@ public class mainAppInstruments {
 //		pia.duration();
 //		pia.printMelody();
 //		pia.countNote();
+		
+		
+//		InstrumentStr Ins = new InstrumentStr();
+//		Ins.insetMelody();
+//		Ins.playMelody();
+		
+		
+		PianoStr Ins2 = new PianoStr();
+		Ins2.insetMelody();
+		Ins2.playMelody();
 		
 		
 		
