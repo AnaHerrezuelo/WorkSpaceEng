@@ -1,16 +1,18 @@
 package instrumentsArrayList;
 
+import java.util.ArrayList;
+
 public class PianoStr extends InstrumentStr {
 
-	String leftMelody[];
+	ArrayList leftMelody ;
 
 	public PianoStr() {
 		super();
-		this.leftMelody = new String[melody.length];
+//		this.leftMelody = new String[melody.length];
 	}
 
 	@Override
-	public boolean insetMelody() {
+	public boolean insertMelody() {
 		try {
 			melody = askMelody();
 			System.out.println("Give the other hand Melody");
@@ -24,12 +26,15 @@ public class PianoStr extends InstrumentStr {
 	
 	@Override
 	public void playMelody() {
-		for (int i = 0; i < melody.length; i++) {
-			System.out.println(melody[i]+",");
+		System.out.println("rightHand: ");
+		for (int i = 0; i < melody.size(); i++) {
+			System.out.print(melody.get(i)+" ");
 		}
+		System.out.println();
 //		System.out.println("leftHand: "+leftMelody.toString());
-		for (int i = 0; i < leftMelody.length; i++) {
-			System.out.println(leftMelody[i]+",");
+		System.out.println("leftHand: ");
+		for (int i = 0; i < leftMelody.size(); i++) {
+			System.out.print(leftMelody.get(i)+" ");
 		}
 		
 	}

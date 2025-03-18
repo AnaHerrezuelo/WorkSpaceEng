@@ -4,27 +4,24 @@ public class mainAppInstruments {
 
 	public static void main(String[] args) {
 		
-		instrument ins = new instrument();
-//		ins.insertMelody();
-//		ins.printMelody();
-//		ins.duration();
+
+		
+		InstrumentStr Ins = new InstrumentStr();
+//		for (int i = 0; i < 3; i++) { Ins.insertMelody(); }
+		Ins.insertMelody();
+		Ins.playMelody();
+//		Ins.coutnNote();
+//		Ins.printNotes();
 		
 		
-//		piano pia = new piano();
-//		pia.insertMelody();
-//		pia.duration();
-//		pia.printMelody();
-//		pia.countNote();
+//		PianoStr Ins2 = new PianoStr();
+//		for (int i = 0; i < 3; i++) {
+//			Ins2.insertMelody();
+//		}
+//		Ins2.insertMelody();
+//		Ins2.playMelody();
+//		Ins2.coutnNote();
 		
-		
-//		InstrumentStr Ins = new InstrumentStr();
-//		Ins.insetMelody();
-//		Ins.playMelody();
-		
-		
-		PianoStr Ins2 = new PianoStr();
-		Ins2.insetMelody();
-		Ins2.playMelody();
 		
 		
 		
