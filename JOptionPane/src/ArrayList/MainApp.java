@@ -7,6 +7,7 @@ public class MainApp {
 	public static void main(String[] args) {
 		
 		ArrayList list = new ArrayList();
+		int auxArray;
 		
 		list.add("String");
 		list.add("Holaa");
@@ -48,7 +49,7 @@ public class MainApp {
 			}
 		}
 		
-		System.out.println(list.toString());
+
 		
 		String total;
 		total="";
@@ -57,6 +58,8 @@ public class MainApp {
 		}
 		System.out.println(total);
 		
+		
+//		System.out.println(list.toString());		
 		
 	}// end public static void main(String[] args) 
 }//end public class MainApp
