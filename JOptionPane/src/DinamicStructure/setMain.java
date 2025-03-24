@@ -39,17 +39,18 @@ public class setMain {
 		
 		
 		while(iter.hasNext()) {
-			Students auxStudent = iter.next();
+//			Students auxStudent = iter.next();
 			if(iter.next().getId()==2) {
 				iter.remove();
 			}
-		}
-		
-		System.out.println(group.toString());
-		
-		while(iter.hasNext()) {
 			System.out.println(iter.next());
 		}
+		
+//		System.out.println(group.toString());
+		
+//		while(iter.hasNext()) {
+//			System.out.println(iter.next());
+//		}
 		
 		
 	}// end public static void main(String[] args) 
