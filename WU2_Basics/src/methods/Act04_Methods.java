@@ -9,6 +9,7 @@ public class Act04_Methods {
 		float max=keyboard.nextFloat();
 		
 		addition(max);
+		keyboard.close();
 		
 	}//main
 	

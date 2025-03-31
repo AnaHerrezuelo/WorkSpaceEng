@@ -13,6 +13,7 @@ public class Act05_Methods {
 		int num2=keyboard.nextInt();
 		
 		addition(num1, num2);
+		keyboard.close();
 		
 	}//main
 	

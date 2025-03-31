@@ -33,6 +33,6 @@ public class Act26 {
 		
 		System.out.print("you gave +10 number");
 		
-	
+		keyboard.close();
 	};
 }

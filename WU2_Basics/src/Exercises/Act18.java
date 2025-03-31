@@ -43,5 +43,6 @@ public class Act18 {
 				System.out.println(num3 + " is the bigger number");
 			}
 		};
+		keyboard.close();
 	};
 }

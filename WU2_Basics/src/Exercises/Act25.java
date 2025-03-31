@@ -18,6 +18,7 @@ public class Act25 {
 			remainder = num%2;
 		};
 		System.out.print("You gave me an even number");
+		keyboard.close();
 
 	};
 }

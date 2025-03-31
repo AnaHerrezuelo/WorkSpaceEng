@@ -72,6 +72,12 @@ public class Act19Act20 {
 			default :
 				System.out.println("this is not between 1 to 7");
 		};
+//		FileReader fReader = new FileReader(fichero);
+//		do {
+//			c=fReader.read();
+//			System.out.print((char)c);
+//		}while(c!=-1);
 		
+		keyboard.close();
 	};
 }

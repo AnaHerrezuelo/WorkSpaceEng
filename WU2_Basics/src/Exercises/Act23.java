@@ -37,6 +37,6 @@ public class Act23 {
 			};
 		total = total/10;
 		System.out.print(total + "\n");
-
+		keyboard.close();
 	};
 }

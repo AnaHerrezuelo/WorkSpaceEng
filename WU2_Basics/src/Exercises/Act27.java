@@ -22,6 +22,7 @@ public class Act27 {
 		}while(count<10);
 		
 		System.out.print("Positive total: " + total + "\nYou inserted: " +count + " numbers");
+		keyboard.close();
 	};
 	
 };

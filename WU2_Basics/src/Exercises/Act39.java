@@ -18,5 +18,6 @@ public class Act39 {
 			count++;
 		};
 		System.out.print("There are " + neg + " negatives numbers");
+		keyboard.close();
 	}
 }

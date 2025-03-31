@@ -29,5 +29,6 @@ public class Act21 {
 			case'u':
 				System.out.println("u is 5"); break;
 		};
+		keyboard.close();
 	};
 }

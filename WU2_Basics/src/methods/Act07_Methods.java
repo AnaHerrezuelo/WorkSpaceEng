@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Act07_Methods {
 	public static void main (String [] arg) {
 		table();
+		
 	}//main
 	
 	public static int askNumber () {
@@ -13,7 +14,10 @@ public class Act07_Methods {
 		System.out.print("Gimme a number: ");
 		int num = keyboard.nextInt();
 		System.out.println(num);
-		return num;
+		
+		
+		keyboard.close();
+		return num;	
 	}//ask num
 	
 	

@@ -9,6 +9,7 @@ public class Act16 {
 		System.out.print("Enter a number: ");
 		num=keyboard.nextFloat();
         System.out.println(num);
+        keyboard.close();
 	};
 };
 

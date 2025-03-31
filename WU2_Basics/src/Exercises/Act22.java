@@ -37,7 +37,7 @@ public class Act22 {
 				System.out.println("Ha habido algún error" ); break;
 		};
 		
-
+		keyboard.close();
 		
 		
 	};

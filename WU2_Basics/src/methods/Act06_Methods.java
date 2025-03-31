@@ -9,6 +9,7 @@ public class Act06_Methods {
 		double celsius = keyboard.nextDouble();
 		
 		Fahrenheit(celsius);
+		keyboard.close();
 		
 	}//main
 	

@@ -19,5 +19,6 @@ public class Act24 {
 			};
 			System.out.print(total + "\n");
 		};
+		keyboard.close();
 	};
 }

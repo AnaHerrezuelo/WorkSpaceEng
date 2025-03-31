@@ -16,5 +16,6 @@ public class Act17 {
 			}else {
 				System.out.println(num + " is 0");
 			};
+			keyboard.close();
 	};
 }

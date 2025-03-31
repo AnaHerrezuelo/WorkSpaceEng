@@ -37,6 +37,7 @@ public class Act38 {
 			if(answerr == 'n') {
 				bol = false;
 			}
+			keyboard.close();
 		}
 	}
 

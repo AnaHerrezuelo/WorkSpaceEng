@@ -32,7 +32,8 @@ public class Act50 {
 				
 			System.out.println(" ");
 		};
-		System.out.print(sum + " it is the odds sum");	
+		System.out.print(sum + " it is the odds sum");
+		keyboard.close();
 		
 	}
 }

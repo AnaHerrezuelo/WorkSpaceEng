@@ -19,5 +19,7 @@ public class Act35 {
 			}
 		}while(num!=5);
 		
+		keyboard.close();
+		
 	};
 }

@@ -18,6 +18,7 @@ public class Act36 {
 				System.out.println(num);
 			}
 		}while(num!=5);
+		keyboard.close();
 		
 	};
 }
