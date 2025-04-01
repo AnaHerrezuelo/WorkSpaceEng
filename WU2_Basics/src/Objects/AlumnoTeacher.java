@@ -46,6 +46,7 @@ public class AlumnoTeacher {
 		  	
 		  		marks[i]=auxMark;
 		  }
+		  keyboard.close();
 	}
 	//}
 	

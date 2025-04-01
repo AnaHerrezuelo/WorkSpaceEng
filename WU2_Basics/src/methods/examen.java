@@ -51,7 +51,7 @@ public class examen {
 				
 			}while(selection!=6);
 			
-			
+			keyboard.close();
 
 		}//end main
 		
@@ -74,6 +74,7 @@ public class examen {
 //			}
 			//keyboard.nextLine();
 			//printVector(array);
+			keyboard.close();
 			return array;
 		}//end one
 		

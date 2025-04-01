@@ -21,6 +21,11 @@ public class Ex16 {
 		BufferedReader fichBuf;
 //		BufferedWriter fichBuf;
 		
+		
+		File ficheroCopy;
+		FileWriter fileWrite;
+		BufferedWriter fichBuffWriter;
+		
 		String readed;
 		char c;
 		
@@ -30,7 +35,8 @@ public class Ex16 {
 			fileRead = new FileReader(fichero);
 			fichBuf = new BufferedReader(fileRead);
 			
-			ArrayList <String>quijote = new ArrayList<String>();
+
+			ArrayList <String> quijote = new ArrayList <String> ();
 			
 			
 			//it works
@@ -53,6 +59,8 @@ public class Ex16 {
 //			readed = fichBuf.readLine();
 //			System.out.println(readed);
 			
+			
+			
 			readed= fichBuf.readLine();
 			while(readed != null) {
 				quijote.add(readed);
@@ -63,7 +71,19 @@ public class Ex16 {
 			
 //			printLength(quijote);
 			
-			printLines(quijote);
+//			printLines(quijote);
+			
+			printQuijoteRev(quijote);
+			
+			
+			
+			ficheroCopy =new File(PATH, "quijoteCopy.txt");
+			fileWrite = new FileWriter(ficheroCopy);
+			fichBuffWriter = new BufferedWriter (fileWrite);
+			
+//			quijoteCopy(quijote, fichBuffWriter);
+			
+			
 			
 			
 			fichBuf.close();
@@ -76,8 +96,11 @@ public class Ex16 {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
-		
+		key.close();
 	}// end public static void main(String[] args) 
+	
+	
+	
 	
 	private static void printQuijote(ArrayList<String> quijote) {
 		for (String readStr : quijote) {
@@ -102,9 +125,26 @@ public class Ex16 {
 			}
 		}
 		
-	}//end printLength
+	}//end printLines
 	
+	private static void printQuijoteRev (ArrayList<String> quijote) {
+		for (int i = quijote.size()-1; i >=0 ; i--) {
+			String auxStr=(quijote.get(i));
+			for (int j = auxStr.length()-1; j >=0 ; j--) {
+				System.out.println(auxStr.charAt(j));
+			}
+			System.out.println();
+		}
+	}//end printQuijote
 	
+	private static void quijoteCopy (ArrayList<String> quijote, BufferedWriter fichBuffWriter) throws IOException {
+		String aux;
+		for (String line : quijote) {
+			aux=line.replace(".", ".\n");
+			aux=aux.replace(";", ".\n");
+			fichBuffWriter.write(aux);
+		}		
+	}//end quijoteCopy
 	
 	
 	

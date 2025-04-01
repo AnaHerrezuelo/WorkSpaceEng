@@ -25,6 +25,8 @@ public class Methods {
 			String sol=bigstr.replace(smallstr, smallstr.toUpperCase());
 			
 			System.out.print(sol);
+			
+			keyboard.close();
 	} // end of public static void main (String [] args)	
 	
 			static void printData () {

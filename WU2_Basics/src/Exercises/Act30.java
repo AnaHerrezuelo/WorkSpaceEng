@@ -17,6 +17,6 @@ public class Act30 {
 			//System.out.println(num);
 		};
 		System.out.println("the total is: " + num);
-
+		keyboard.close();
 	};
 }

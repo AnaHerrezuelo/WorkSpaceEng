@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class InstrumentStr {
 	String notes[] = { "DO", "RE", "MI", "FA", "SOL", "LA", "SI" };
-	ArrayList melody;
+	ArrayList<String> melody;
 	Scanner keyboard = new Scanner(System.in);
 
 	public InstrumentStr() {
@@ -37,8 +37,8 @@ public class InstrumentStr {
 //	}
 	
 	
-	public ArrayList askMelody() {
-		ArrayList auxMelody=new ArrayList();
+	public ArrayList<String> askMelody() {
+		ArrayList<String>auxMelody=new ArrayList<String>();
 		
 			System.out.println("give a note");
 			String auxNote = keyboard.nextLine();

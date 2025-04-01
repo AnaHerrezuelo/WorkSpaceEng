@@ -55,7 +55,7 @@ public class EnumApp {
 			break;
 			
 		}
-		
+		keyboard.close();
 		
 	}
 }

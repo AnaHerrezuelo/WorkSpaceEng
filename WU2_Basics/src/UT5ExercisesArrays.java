@@ -431,7 +431,7 @@ public class UT5ExercisesArrays {
 		
 		
 
-	    
+	    keyboard.close();
 	    
 	    
 		

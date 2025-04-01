@@ -30,7 +30,7 @@ public class Act31 {
 			System.out.println("average: " + total);
 			System.out.println("even numbers: " + even);
 		};
-		
+		keyboard.close();
 	};
 }
 

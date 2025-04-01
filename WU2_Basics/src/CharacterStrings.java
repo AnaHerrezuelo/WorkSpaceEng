@@ -269,7 +269,7 @@ public class CharacterStrings {
 		
 		
 		
-		
+		keyboard.close();
 		
 		
 		

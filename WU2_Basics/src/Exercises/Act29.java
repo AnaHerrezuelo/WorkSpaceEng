@@ -14,6 +14,6 @@ public class Act29 {
 			sentence=keyboard.nextLine();
 			System.out.println(sentence);
 		};
-
+		keyboard.close();
 	};
 }

@@ -23,5 +23,7 @@ public class Ex09 {
 			}
 		}while(times<3);
 		System.out.println("total= " + total);
+		
+		keyboard.close();
 	}//end public static void main(String[] args) 
 }//end class Ex09

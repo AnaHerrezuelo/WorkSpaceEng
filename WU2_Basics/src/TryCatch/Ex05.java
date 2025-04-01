@@ -34,6 +34,8 @@ public class Ex05 {
 				System.out.println("we closed the program, There are too many wrong entries");
 			}	
 		}while(count<3);
+		
+		keyboard.close();
 
 	}//end public static void main(String[] args) 
 

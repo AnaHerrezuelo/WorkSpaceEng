@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Group {
 	public static void main(String[] args) {
 		
-		ArrayList <Students>studentsList = new ArrayList();
+		ArrayList <Students>studentsList = new ArrayList<Students>();
 		String groupName="A";
 		
 		//from the class Students

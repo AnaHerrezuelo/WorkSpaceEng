@@ -58,6 +58,6 @@ public class div {
 		        System.out.println("这是最终语句");
 		    }            
 		}
-		
+		keyboard.close();
 	}
 }

@@ -149,7 +149,7 @@ public class ArraysExercices {
 		
 		
 		
-		
+		keyboard.close();
 		
 		
 		

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PianoStr extends InstrumentStr {
 
-	ArrayList leftMelody ;
+	ArrayList<String> leftMelody ;
 
 	public PianoStr() {
 		super();

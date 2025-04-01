@@ -34,7 +34,7 @@ public class Act34 {
 			    	System.out.println("The month has 28 days"); break; //no bisiesto
 			    }
 		};
-
+		keyboard.close();
 	};
 
 }

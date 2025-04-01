@@ -67,7 +67,7 @@ public class Main {
 			
 		}while(sel!=5);
 		
-
+		keyboard.close();
 	}
 
 

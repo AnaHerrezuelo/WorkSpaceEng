@@ -21,5 +21,7 @@ public class DataImputExample {
         System.out.println("The inserted number is: " + num);
         System.out.println(name + " has " + num + " years old");
         
+        keyboard.close();
+        
     }
 }

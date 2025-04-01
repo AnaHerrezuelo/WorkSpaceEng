@@ -173,7 +173,7 @@ public class TablesExercises {
         }
 
 		*/
-		
+		keyboard.close();
 		
 	} // end of public static void main (String [] args)
 } //end of public class

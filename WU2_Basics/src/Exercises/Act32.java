@@ -42,5 +42,6 @@ public class Act32 {
 		
 		System.out.print(pass);
 		//System.out.print(students);
+		keyboard.close();
 	};
 }

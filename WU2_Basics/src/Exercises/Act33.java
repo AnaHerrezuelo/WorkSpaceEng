@@ -24,5 +24,6 @@ public class Act33 {
 		
 		System.out.println("students pass "+pass);
 		System.out.println("number total "+students);
+		keyboard.close();
 	};
 }
