@@ -1,6 +1,6 @@
 package Objects;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 /*
  * Write a program that asks for the sides of a rectangle 

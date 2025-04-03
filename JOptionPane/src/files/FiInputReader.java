@@ -22,6 +22,7 @@ public class FiInputReader {
 //				System.out.println(c);
 			}while(c!=-1);
 			fichInStream.close();
+			
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
 			System.out.println();

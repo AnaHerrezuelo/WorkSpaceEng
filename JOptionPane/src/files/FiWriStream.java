@@ -27,6 +27,7 @@ public class FiWriStream {
 //			fileOutS.write(32);
 			fileWri.write(65);
 			
+			//to read the file
 //			FileReader fReader = new FileReader(fichero);
 //			do {
 //				c=fReader.read();

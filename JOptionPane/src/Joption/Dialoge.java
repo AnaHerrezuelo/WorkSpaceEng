@@ -1,6 +1,6 @@
 package Joption;
 
-import javax.swing.Icon;
+//import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
 //class CancelButtonException extends RuntimeException{
