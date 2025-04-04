@@ -57,6 +57,8 @@ public class StudentsFile {
 				System.out.println(auxStuden.toString());				
 			}
 			
+//			datIn.close();
+//			fileIn.close();
 			
 			
 		}catch(FileNotFoundException e) {
