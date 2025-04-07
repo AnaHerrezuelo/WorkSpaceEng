@@ -11,48 +11,39 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 //import java.util.HashMap;
 
-public class mainEmployeeApp {
+public class mainEmployeeApp2 {
 
 	public static void main(String[] args) {
 		final String PATH="C:\\Files";
 		File file;
-//		DataInputStream DataInS;
-//		FileOutputStream FileOuS;
-//		DataOutputStream DataOuS;
+
 		
 		
+		ArrayList <Employee> employeeList = new ArrayList <Employee>();
+		employeeList.add(new Employee(12, "aaa", true, 3.5f ));
+		employeeList.add(new Employee(12, "bbb", false, 6f ));
+		employeeList.add(new Employee(12, "ccc", true, 3f ));
 			
 			
 		try {
-			file= new File(PATH, "Employee.txt");
-			FileWriter fileWri= new FileWriter(file);
-			BufferedWriter fileBuffW = new BufferedWriter(fileWri);
+			file= new File(PATH, "EmployeeObject.txt");
 			
 			FileOutputStream fileOutputS= new FileOutputStream(file);
-			DataOutputStream daOutputS= new DataOutputStream(fileOutputS);
-			
-			
 			ObjectOutputStream obOutS= new ObjectOutputStream(fileOutputS);
 			
 			
-//			HashMap <int> map = new HashMap();
 			
-			ArrayList <Employee> employeeList = new ArrayList <Employee>();
-			employeeList.add(new Employee(12, "aaa", true, 3.5f ));
-			employeeList.add(new Employee(12, "bbb", false, 6f ));
-			employeeList.add(new Employee(12, "ccc", true, 3f ));
+			//insert the data on the file
+			for (Employee emp : employeeList) {
+				obOutS.writeObject(emp);
+			}
 			
-			
-			
-			printList(employeeList);
+			//print the array
+//			printList(employeeList);
 			
 			
-			//insert the data
-//			for (Employee emp : employeeList) {
-//				obOutS.writeObject(emp);
-//			}
-			
-			//read the file
+			fileOutputS.close();
+			obOutS.close();
 			
 			
 		}catch(FileNotFoundException e) {
