@@ -19,6 +19,7 @@ public class FiWriStream {
 			fileWri= new FileWriter(fichero, true);
 			if(fichero.exists()) {
 				fileWri= new FileWriter(fichero, true);
+				
 			}else {
 				fileWri= new FileWriter(fichero);
 			}
@@ -34,7 +35,8 @@ public class FiWriStream {
 //				System.out.print((char)c);
 //			}while(c!=-1);
 			
-			fileWri.close();
+//			fileWri.close();
+			
 			 
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
@@ -42,6 +44,7 @@ public class FiWriStream {
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
+		
 
 	}// end public static void main(String[] args) 
 }//end public class FiWriStream

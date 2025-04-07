@@ -36,6 +36,7 @@ public class Group {
 //			studentsList.add(new Students ("Juan", 1));
 //			studentsList.add(new Students ("Juan", 4));
 //			studentsList.add(new Students ("Chema", 3));
+//			studentsList.add(new Students ("Nath", 5));
 			
 			
 			//print the ArrayList
@@ -61,13 +62,12 @@ public class Group {
 //			fileWri.close();
 			
 		
-			ArrayList <String>studentsList = new ArrayList<String>();
-			
+//			ArrayList <String>studentsList = new ArrayList<String>();
+//			
 			
 			fileRead = new FileReader(file);
 			fileBufR = new BufferedReader(fileRead);
-			
-			//does not work (it suppose to change the output)
+
 			String readed;
 			String split[];
 			readed = fileBufR.readLine();

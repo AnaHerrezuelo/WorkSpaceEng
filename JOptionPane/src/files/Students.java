@@ -1,10 +1,17 @@
 package files;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Students /* implements Comparable */ {
+public class Students  implements Comparable, Serializable  {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	String name;
 	int id;
+	
 	
 	
 	public Students(String name, int id) {
@@ -49,29 +56,30 @@ public class Students /* implements Comparable */ {
 	
 	
 	
-//	@Override
-//	public int compareTo(Object o) {
-//		int aux=this.id-((Students)o).id;
-//		return aux;
-//	}
-//	
-//	
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(id, name);
-//	}
-//	
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (this == obj)
-//			return true;
-//		if (obj == null)
-//			return false;
-//		if (getClass() != obj.getClass())
-//			return false;
-//		Students other = (Students) obj;
-//		return id == other.id && Objects.equals(name, other.name);
-//	}	
+	@Override
+	public int compareTo(Object o) {
+		int aux=this.id-((Students)o).id;
+		return aux;
+	}
+	
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, name);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Students other = (Students) obj;
+		return id == other.id && Objects.equals(name, other.name);
+	}
+	
 	
 	
 //	public static void main(String[] args) {

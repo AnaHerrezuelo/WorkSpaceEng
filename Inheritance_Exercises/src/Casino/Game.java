@@ -6,8 +6,8 @@ public class Game {
 	Scanner keyboard = new Scanner(System.in);
 	
 	private String name;
-	private final float MAXBET=20000;
-	private final float MINBET=1;
+//	private final float MAXBET=20000;
+//	private final float MINBET=1;
 	private float bet, balance;
 	
 	
