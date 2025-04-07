@@ -1,4 +1,4 @@
-package files;
+package files.students;
 
 
 import java.io.File;
@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+
 
 public class StudentsObjects {
 
@@ -20,9 +21,12 @@ public class StudentsObjects {
 			
 			ObjectOutputStream obOutS= new ObjectOutputStream(fileOutputS);
 			
-			Students auxStudent= new Students("pepe", 3);
+			StudentsFiles auxStudent= new StudentsFiles("pepe", 3);
 			
 			obOutS.writeObject(auxStudent);
+			
+			
+			
 			
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
