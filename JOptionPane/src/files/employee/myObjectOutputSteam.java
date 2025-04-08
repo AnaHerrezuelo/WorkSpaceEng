@@ -1,13 +1,13 @@
 package files.employee;
 
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-//import java.io.IOException;
 
 public class myObjectOutputSteam extends ObjectOutputStream {
 
-	protected myObjectOutputSteam() throws IOException, SecurityException {
+	protected myObjectOutputSteam(FileOutputStream fileOutputS) throws IOException, SecurityException {
 		super();
 	}
 

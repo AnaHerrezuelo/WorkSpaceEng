@@ -29,7 +29,7 @@ public class Boat {
 	}
 
 	public void valAlquiler() {
-		double val;
+//		double val;
 		val= (this.length * ren.PRBASE * 10);
 	}
 

@@ -29,8 +29,8 @@ public class Boat {
 	}
 
 	public void valAlquiler() {
-		double val;
-		val= (this.length * ren.PRBASE * 10);
+//		double val;
+//		val= (this.length * ren.PRBASE * 10);
 	}
 
 	// GETTERS AND SETTERS

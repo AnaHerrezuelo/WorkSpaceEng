@@ -3,7 +3,7 @@ package zoo;
 import java.util.HashMap;
 
 public class TranslationDic {
-	static HashMap <String, String> words  = new HashMap ();
+	static HashMap <String, String> words  = new HashMap <String, String> ();
 	 
 	public static void main(String[] args) {
 		words.put("Hello", "Hola");

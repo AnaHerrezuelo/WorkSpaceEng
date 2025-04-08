@@ -4,15 +4,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 //import java.util.HashMap;
 
-public class WriteEmployeeApp {
+public class WriteList {
 
 	public static void main(String[] args) {
 		final String PATH="C:\\Files";
 		File file;
-
+		
+		FileOutputStream fileOutputS;
+		ObjectOutputStream obOutS;
 		
 		
 		ArrayList <Employee> employeeList = new ArrayList <Employee>();
@@ -24,14 +27,18 @@ public class WriteEmployeeApp {
 		try {
 			file= new File(PATH, "EmployeeObject.txt");
 			
-			FileOutputStream fileOutputS= new FileOutputStream(file, true);
+			fileOutputS= new FileOutputStream(file, true);
+			obOutS= new myObjectOutputSteam(fileOutputS);
 			
-			myObjectOutputSteam obOutS= new myObjectOutputSteam(fileOutputS);
+			obOutS.writeObject(employeeList);
+			
+			System.out.println("a");
+			
 						
 			//insert the data on the file
-			for (Employee emp : employeeList) {
-				obOutS.writeObject(emp);
-			}
+//			for (Employee emp : employeeList) {
+//				obOutS.writeObject(emp);
+//			}
 			
 			//print the array
 //			printList(employeeList);
@@ -39,7 +46,6 @@ public class WriteEmployeeApp {
 			
 			fileOutputS.close();
 //			obOutS.close();
-			
 			
 			
 		}catch(FileNotFoundException e) {
