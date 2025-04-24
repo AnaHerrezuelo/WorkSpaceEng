@@ -38,7 +38,7 @@ public class Main {
 		try {
 			fiInput = new FileInputStream(file);
 			
-			datOutput.writeObject(fiInput);
+//			datOutput.writeObject(fiInput);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
 			System.out.println();
